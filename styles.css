@@ -1,0 +1,98 @@
+:root {
+  --primary: hsl(222.2, 47.4%, 11.2%);
+  --primary-foreground: hsl(210, 40%, 98%);
+  --background: hsl(0, 0%, 100%);
+  --foreground: hsl(222.2, 47.4%, 11.2%);
+  --muted: hsl(210, 40%, 96.1%);
+  --muted-foreground: hsl(215.4, 16.3%, 46.9%);
+  --border: hsl(214.3, 31.8%, 91.4%);
+  --input: hsl(214.3, 31.8%, 91.4%);
+}
+
+[data-bs-theme="dark"] {
+  --primary: hsl(210, 40%, 98%);
+  --primary-foreground: hsl(222.2, 47.4%, 11.2%);
+  --background: hsl(222.2, 84%, 4.9%);
+  --foreground: hsl(210, 40%, 98%);
+  --muted: hsl(217.2, 32.6%, 17.5%);
+  --muted-foreground: hsl(215, 20.2%, 65.1%);
+  --border: hsl(217.2, 32.6%, 17.5%);
+  --input: hsl(217.2, 32.6%, 17.5%);
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: var(--background);
+  color: var(--foreground);
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.navbar,
+.footer {
+  background-color: var(--background) !important;
+  border-bottom: 1px solid var(--border);
+}
+
+.navbar-brand,
+.nav-link {
+  color: var(--foreground) !important;
+}
+
+.card {
+  background-color: var(--background);
+  border-color: var(--border);
+}
+
+.btn-primary {
+  background-color: var(--primary);
+  border-color: var(--primary);
+  color: var(--primary-foreground);
+}
+
+.btn-primary:hover {
+  background-color: var(--primary-foreground);
+  border-color: var(--primary);
+  color: var(--primary);
+}
+
+.btn-outline-primary {
+  color: var(--primary);
+  border-color: var(--primary);
+}
+
+.btn-outline-primary:hover {
+  background-color: var(--primary);
+  color: var(--primary-foreground);
+}
+
+.skill-badge {
+  font-size: 0.8rem;
+  background-color: var(--muted);
+  color: var(--muted-foreground);
+  padding: 10px 20px;
+  border-radius: 50px
+}
+
+.highlight {
+  background-color: var(--primary);
+  color: var(--primary-foreground);
+}
+
+.project-card {
+  height: 100%;
+}
+
+.hero-section {
+  background-color: var(--muted);
+  color: var(--foreground);
+}
+
+.border-bottom {
+  border-color: var(--border) !important;
+}
+
+#theme-toggle {
+  background: none;
+  border: none;
+  color: var(--foreground);
+}

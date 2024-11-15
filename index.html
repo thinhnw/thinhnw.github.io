@@ -1,118 +1,26 @@
 <!DOCTYPE html>
-<html lang="en" data-bs-theme="light">
+<html lang="en" data-bs-theme="dark">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jane Doe - Web Developer Portfolio</title>
+    <title>Thinh Nguyen - Web Developer Portfolio</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
-    <style>
-        :root {
-            --primary: hsl(222.2, 47.4%, 11.2%);
-            --primary-foreground: hsl(210, 40%, 98%);
-            --background: hsl(0, 0%, 100%);
-            --foreground: hsl(222.2, 47.4%, 11.2%);
-            --muted: hsl(210, 40%, 96.1%);
-            --muted-foreground: hsl(215.4, 16.3%, 46.9%);
-            --border: hsl(214.3, 31.8%, 91.4%);
-            --input: hsl(214.3, 31.8%, 91.4%);
-        }
-
-        [data-bs-theme="dark"] {
-            --primary: hsl(210, 40%, 98%);
-            --primary-foreground: hsl(222.2, 47.4%, 11.2%);
-            --background: hsl(222.2, 84%, 4.9%);
-            --foreground: hsl(210, 40%, 98%);
-            --muted: hsl(217.2, 32.6%, 17.5%);
-            --muted-foreground: hsl(215, 20.2%, 65.1%);
-            --border: hsl(217.2, 32.6%, 17.5%);
-            --input: hsl(217.2, 32.6%, 17.5%);
-        }
-
-        body {
-            font-family: 'Inter', sans-serif;
-            background-color: var(--background);
-            color: var(--foreground);
-            transition: background-color 0.3s, color 0.3s;
-        }
-
-        .navbar,
-        .footer {
-            background-color: var(--background) !important;
-            border-bottom: 1px solid var(--border);
-        }
-
-        .navbar-brand,
-        .nav-link {
-            color: var(--foreground) !important;
-        }
-
-        .card {
-            background-color: var(--background);
-            border-color: var(--border);
-        }
-
-        .btn-primary {
-            background-color: var(--primary);
-            border-color: var(--primary);
-            color: var(--primary-foreground);
-        }
-
-        .btn-primary:hover {
-            background-color: var(--primary-foreground);
-            border-color: var(--primary);
-            color: var(--primary);
-        }
-
-        .btn-outline-primary {
-            color: var(--primary);
-            border-color: var(--primary);
-        }
-
-        .btn-outline-primary:hover {
-            background-color: var(--primary);
-            color: var(--primary-foreground);
-        }
-
-        .skill-badge {
-            font-size: 0.8rem;
-            background-color: var(--muted);
-            color: var(--muted-foreground);
-        }
-
-        .project-card {
-            height: 100%;
-        }
-
-        .hero-section {
-            background-color: var(--muted);
-            color: var(--foreground);
-        }
-
-        .border-bottom {
-            border-color: var(--border) !important;
-        }
-
-        #theme-toggle {
-            background: none;
-            border: none;
-            color: var(--foreground);
-        }
-    </style>
+    <link rel="stylesheet" href="styles.css"> <!-- Include styles.css -->
 </head>
 
 <body>
     <nav class="navbar navbar-expand-lg">
         <div class="container">
-            <a class="navbar-brand" href="#">Jane Doe</a>
+            <a class="navbar-brand" href="#">Thinh Nguyen</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
-                    <li class="nav-item">
+                    <!-- <li class="nav-item">
                         <a class="nav-link" href="#about">About</a>
                     </li>
                     <li class="nav-item">
@@ -123,7 +31,7 @@
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#contact">Contact</a>
-                    </li>
+                    </li> -->
                     <li class="nav-item">
                         <button id="theme-toggle" class="nav-link" aria-label="Toggle theme">
                             <i class="bi bi-moon-fill"></i>
@@ -136,8 +44,8 @@
 
     <header class="hero-section text-center py-5">
         <div class="container">
-            <h1 class="display-4">Jane Doe</h1>
-            <p class="lead">Full Stack Web Developer</p>
+            <h1 class="display-4">Nguyen Vinh Thinh</h1>
+            <p class="lead">Full-Stack Web Developer</p>
         </div>
     </header>
 
@@ -145,30 +53,35 @@
         <section id="about" class="mb-5">
             <h2 class="border-bottom pb-2 mb-4">About Me</h2>
             <p class="lead">
-                I'm a passionate full stack web developer with 5 years of experience in creating
-                responsive and user-friendly web applications. I love turning complex problems
-                into simple, beautiful, and intuitive designs.
+                Full-stack developer with 2 years of experience in front-end, back-end, and DevOps, focused on building
+                user-friendly, scalable applications and optimizing deployment pipelines for efficiency and reliability.
             </p>
         </section>
 
         <section id="skills" class="mb-5">
             <h2 class="border-bottom pb-2 mb-4">Skills</h2>
             <div class="d-flex flex-wrap gap-2">
-                <span class="badge skill-badge">JavaScript</span>
-                <span class="badge skill-badge">HTML5</span>
-                <span class="badge skill-badge">CSS3</span>
-                <span class="badge skill-badge">React</span>
-                <span class="badge skill-badge">Node.js</span>
-                <span class="badge skill-badge">TypeScript</span>
+                <span class="badge skill-badge highlight">Ruby on Rails</span>
+                <span class="badge skill-badge highlight">Python FastAPI</span>
+                <span class="badge skill-badge highlight">ReactJS</span>
+                <span class="badge skill-badge highlight">PostgreSQL</span>
+                <span class="badge skill-badge highlight">Redis</span>
+                <span class="badge skill-badge highlight">Docker</span>
+                <span class="badge skill-badge highlight">Github Actions</span>
                 <span class="badge skill-badge">MongoDB</span>
-                <span class="badge skill-badge">Git</span>
+                <span class="badge skill-badge">Apache Kafka</span>
+                <span class="badge skill-badge">RabbitMQ</span>
+                <span class="badge skill-badge">Kubernetes</span>
+                <span class="badge skill-badge">VueJS</span>
+                <span class="badge skill-badge">Vim</span>
+                <span class="badge skill-badge">Linux</span>
             </div>
         </section>
 
         <section id="projects" class="mb-5">
             <h2 class="border-bottom pb-2 mb-4">Projects</h2>
-            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
-                <div class="col">
+            <div class="row row-cols-1 row-cols-md-2 g-4">
+                <!-- <div class="col">
                     <div class="card project-card">
                         <div class="card-body">
                             <h3 class="card-title">E-commerce Platform</h3>
@@ -196,6 +109,22 @@
                                 third-party API.</p>
                             <a href="https://example.com/weather" class="btn btn-primary" target="_blank"
                                 rel="noopener noreferrer">View Project</a>
+                            <a href="https://example.com/ecommerce/README.md" class="btn btn-outline-primary"
+                                target="_blank" rel="noopener noreferrer">README.md</a>
+
+                        </div>
+                    </div>
+                </div> -->
+                <div class="col">
+                    <div class="card project-card">
+                        <div class="card-body">
+                            <h3 class="card-title">Live Chat</h3>
+                            <p class="card-text">Real-time one-on-one messaging application (Python FastAPI, ReactJS)
+                            </p>
+                            <a href="https://example.com/weather" class="btn btn-primary" target="_blank"
+                                rel="noopener noreferrer">View Project</a>
+                            <a href="https://github.com/thinhnw/livechat-fastapi" class="btn btn-outline-primary"
+                                target="_blank" rel="noopener noreferrer">README.md</a>
                         </div>
                     </div>
                 </div>
@@ -205,52 +134,30 @@
         <section id="contact" class="mb-5">
             <h2 class="border-bottom pb-2 mb-4">Contact</h2>
             <div class="d-flex flex-column flex-md-row gap-3">
-                <a href="mailto:jane.doe@example.com" class="btn btn-outline-primary">
+                <a href="mailto:nvt0412@gmail.com" class="btn btn-outline-primary">
                     <i class="bi bi-envelope-fill me-2"></i>Email Me
                 </a>
-                <a href="https://github.com/janedoe" class="btn btn-outline-primary" target="_blank"
+                <a href="https://github.com/thinhnw" class="btn btn-outline-primary" target="_blank"
                     rel="noopener noreferrer">
                     <i class="bi bi-github me-2"></i>GitHub
                 </a>
-                <a href="https://linkedin.com/in/janedoe" class="btn btn-outline-primary" target="_blank"
+                <!-- <a href="https://linkedin.com/in/thinhnw" class="btn btn-outline-primary" target="_blank"
                     rel="noopener noreferrer">
                     <i class="bi bi-linkedin me-2"></i>LinkedIn
-                </a>
+                </a> -->
             </div>
         </section>
     </main>
 
     <footer class="footer py-4 text-center">
         <div class="container">
-            <p class="mb-0">&copy; 2023 Jane Doe. All rights reserved.</p>
+            <p class="mb-0">&copy; 2023 Thinh Nguyen. All rights reserved.</p>
         </div>
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script>
-        document.addEventListener('DOMContentLoaded', function () {
-            const themeToggle = document.getElementById('theme-toggle');
-            const htmlElement = document.documentElement;
-            const themeIcon = themeToggle.querySelector('i');
+    <script src="script.js"></script> <!-- Include script.js -->
 
-            function setTheme(theme) {
-                htmlElement.setAttribute('data-bs-theme', theme);
-                localStorage.setItem('theme', theme);
-                themeIcon.className = theme === 'dark' ? 'bi bi-sun-fill' : 'bi bi-moon-fill';
-            }
-
-            themeToggle.addEventListener('click', function () {
-                const currentTheme = htmlElement.getAttribute('data-bs-theme');
-                const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
-                setTheme(newTheme);
-            });
-
-            const savedTheme = localStorage.getItem('theme');
-            if (savedTheme) {
-                setTheme(savedTheme);
-            }
-        });
-    </script>
 </body>
 
 </html>
