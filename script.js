@@ -19,4 +19,10 @@ document.addEventListener('DOMContentLoaded', function () {
   if (savedTheme) {
       setTheme(savedTheme);
   }
+
+  // Dynamically update the year in the footer
+  const yearElement = document.getElementById('current-year');
+  if (yearElement) {
+    yearElement.textContent = new Date().getFullYear();
+  }
 });
