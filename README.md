@@ -1,1 +1,1 @@
-[Goto](thinhnw.github.io)
+https://thinhnw.github.io
